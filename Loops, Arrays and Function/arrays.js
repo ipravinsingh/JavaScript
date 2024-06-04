@@ -58,3 +58,23 @@ console.log(spliceFn);
 //sort
 sortList.sort();
 console.log(sortList);
+
+//forEach loop
+let a = [10, 4, 23, "hi"];
+a.forEach((element, index, arr) => {
+  console.log(element, index, arr);
+});
+
+//forEach loop
+let b = [10, 4, 23, "hi"];
+const myfn = (element, index, arr) => {
+  console.log("Printing", element, index, arr);
+};
+b.forEach(myfn);
+
+// sorting integer
+const integerSort = [10, 4, 6, 6, 33, 45];
+integerSort.sort((firstnum, secondnum) => {
+  return firstnum - secondnum;
+});
+console.log(integerSort);
