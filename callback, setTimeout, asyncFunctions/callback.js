@@ -1,11 +1,13 @@
 function orderPizza(myFunction) {
-  getCheese((cheese) => {
-    makeDough(cheese, (dough) => {
-      bakePizza(dough, (pizza) => {
-        myFunction(pizza);
-      });
-    });
-  });
+  //   getCheese((cheese) => {
+  //     makeDough(cheese, (dough) => {
+  //       bakePizza(dough, (pizza) => {
+  //         myFunction(pizza);
+  //       });
+  //     });
+  //   });
+  const pizza = "🍕";
+  myFunction(pizza);
 }
 
 function getCheese(next) {
